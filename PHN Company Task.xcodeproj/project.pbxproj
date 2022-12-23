@@ -7,15 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		801180FC2955BE28008D70D6 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801180FB2955BE28008D70D6 /* Users.swift */; };
+		80520B2A29553EED00468488 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80520B2929553EED00468488 /* CollectionViewCell.swift */; };
+		80520B2C295548BD00468488 /* Jwellery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80520B2B295548BD00468488 /* Jwellery.swift */; };
+		80520B2E2955950700468488 /* tv.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 80520B2D2955950700468488 /* tv.jpeg */; };
+		80520B302955950F00468488 /* monitor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 80520B2F2955950F00468488 /* monitor.jpeg */; };
+		80520B322955951600468488 /* camera1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 80520B312955951600468488 /* camera1.jpeg */; };
+		80520B342955951E00468488 /* camera.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 80520B332955951E00468488 /* camera.jpeg */; };
+		80F735802955CE28005F88D6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F7357F2955CE28005F88D6 /* DetailViewController.swift */; };
 		80FBD6FC2954A8B8008DA484 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBD6FB2954A8B8008DA484 /* AppDelegate.swift */; };
 		80FBD6FE2954A8B8008DA484 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBD6FD2954A8B8008DA484 /* SceneDelegate.swift */; };
 		80FBD7002954A8B8008DA484 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBD6FF2954A8B8008DA484 /* ViewController.swift */; };
 		80FBD7032954A8B8008DA484 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FBD7012954A8B8008DA484 /* Main.storyboard */; };
 		80FBD7052954A8B9008DA484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80FBD7042954A8B9008DA484 /* Assets.xcassets */; };
 		80FBD7082954A8B9008DA484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FBD7062954A8B9008DA484 /* LaunchScreen.storyboard */; };
+		80FBD7122954B3D2008DA484 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBD7112954B3D2008DA484 /* HomeViewController.swift */; };
+		E9DF657DAE9EC220D6E1507B /* Pods_PHN_Company_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6013AF0BA234ECE1189B067D /* Pods_PHN_Company_Task.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47A4F21A5E2B8070C6ECA823 /* Pods-PHN Company Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHN Company Task.debug.xcconfig"; path = "Target Support Files/Pods-PHN Company Task/Pods-PHN Company Task.debug.xcconfig"; sourceTree = "<group>"; };
+		6013AF0BA234ECE1189B067D /* Pods_PHN_Company_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PHN_Company_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		801180FB2955BE28008D70D6 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		80520B2929553EED00468488 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		80520B2B295548BD00468488 /* Jwellery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jwellery.swift; sourceTree = "<group>"; };
+		80520B2D2955950700468488 /* tv.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tv.jpeg; sourceTree = "<group>"; };
+		80520B2F2955950F00468488 /* monitor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monitor.jpeg; sourceTree = "<group>"; };
+		80520B312955951600468488 /* camera1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camera1.jpeg; sourceTree = "<group>"; };
+		80520B332955951E00468488 /* camera.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camera.jpeg; sourceTree = "<group>"; };
+		80F7357F2955CE28005F88D6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		80FBD6F82954A8B8008DA484 /* PHN Company Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PHN Company Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FBD6FB2954A8B8008DA484 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80FBD6FD2954A8B8008DA484 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +44,8 @@
 		80FBD7042954A8B9008DA484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80FBD7072954A8B9008DA484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80FBD7092954A8B9008DA484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80FBD7112954B3D2008DA484 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F9B3A0E4CE3D6E0C5AF86C38 /* Pods-PHN Company Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHN Company Task.release.xcconfig"; path = "Target Support Files/Pods-PHN Company Task/Pods-PHN Company Task.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9DF657DAE9EC220D6E1507B /* Pods_PHN_Company_Task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +65,8 @@
 			children = (
 				80FBD6FA2954A8B8008DA484 /* PHN Company Task */,
 				80FBD6F92954A8B8008DA484 /* Products */,
+				BADE774B094F4293138D505A /* Pods */,
+				E440D34F9C51F20E0D9709F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +85,38 @@
 				80FBD6FD2954A8B8008DA484 /* SceneDelegate.swift */,
 				80FBD6FF2954A8B8008DA484 /* ViewController.swift */,
 				80FBD7012954A8B8008DA484 /* Main.storyboard */,
+				80520B2929553EED00468488 /* CollectionViewCell.swift */,
+				80F7357F2955CE28005F88D6 /* DetailViewController.swift */,
+				80FBD7112954B3D2008DA484 /* HomeViewController.swift */,
+				801180FB2955BE28008D70D6 /* Users.swift */,
+				80520B2B295548BD00468488 /* Jwellery.swift */,
 				80FBD7042954A8B9008DA484 /* Assets.xcassets */,
+				80520B2D2955950700468488 /* tv.jpeg */,
+				80520B332955951E00468488 /* camera.jpeg */,
+				80520B312955951600468488 /* camera1.jpeg */,
+				80520B2F2955950F00468488 /* monitor.jpeg */,
 				80FBD7062954A8B9008DA484 /* LaunchScreen.storyboard */,
 				80FBD7092954A8B9008DA484 /* Info.plist */,
 			);
 			path = "PHN Company Task";
+			sourceTree = "<group>";
+		};
+		BADE774B094F4293138D505A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47A4F21A5E2B8070C6ECA823 /* Pods-PHN Company Task.debug.xcconfig */,
+				F9B3A0E4CE3D6E0C5AF86C38 /* Pods-PHN Company Task.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E440D34F9C51F20E0D9709F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6013AF0BA234ECE1189B067D /* Pods_PHN_Company_Task.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80FBD70C2954A8BA008DA484 /* Build configuration list for PBXNativeTarget "PHN Company Task" */;
 			buildPhases = (
+				1C63EF6F0B42DA8789171593 /* [CP] Check Pods Manifest.lock */,
 				80FBD6F42954A8B8008DA484 /* Sources */,
 				80FBD6F52954A8B8008DA484 /* Frameworks */,
 				80FBD6F62954A8B8008DA484 /* Resources */,
+				0F6737D4C3F4B11243C55FDF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,21 +180,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				80FBD7082954A8B9008DA484 /* LaunchScreen.storyboard in Resources */,
+				80520B302955950F00468488 /* monitor.jpeg in Resources */,
+				80520B2E2955950700468488 /* tv.jpeg in Resources */,
 				80FBD7052954A8B9008DA484 /* Assets.xcassets in Resources */,
+				80520B342955951E00468488 /* camera.jpeg in Resources */,
+				80520B322955951600468488 /* camera1.jpeg in Resources */,
 				80FBD7032954A8B8008DA484 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F6737D4C3F4B11243C55FDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PHN Company Task/Pods-PHN Company Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PHN Company Task/Pods-PHN Company Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PHN Company Task/Pods-PHN Company Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C63EF6F0B42DA8789171593 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PHN Company Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		80FBD6F42954A8B8008DA484 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80520B2A29553EED00468488 /* CollectionViewCell.swift in Sources */,
 				80FBD7002954A8B8008DA484 /* ViewController.swift in Sources */,
 				80FBD6FC2954A8B8008DA484 /* AppDelegate.swift in Sources */,
+				80520B2C295548BD00468488 /* Jwellery.swift in Sources */,
 				80FBD6FE2954A8B8008DA484 /* SceneDelegate.swift in Sources */,
+				80FBD7122954B3D2008DA484 /* HomeViewController.swift in Sources */,
+				801180FC2955BE28008D70D6 /* Users.swift in Sources */,
+				80F735802955CE28005F88D6 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +387,7 @@
 		};
 		80FBD70D2954A8BA008DA484 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47A4F21A5E2B8070C6ECA823 /* Pods-PHN Company Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +415,7 @@
 		};
 		80FBD70E2954A8BA008DA484 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9B3A0E4CE3D6E0C5AF86C38 /* Pods-PHN Company Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

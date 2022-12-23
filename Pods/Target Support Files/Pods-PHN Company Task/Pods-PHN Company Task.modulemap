@@ -1,0 +1,6 @@
+framework module Pods_PHN_Company_Task {
+  umbrella header "Pods-PHN Company Task-umbrella.h"
+
+  export *
+  module * { export * }
+}
