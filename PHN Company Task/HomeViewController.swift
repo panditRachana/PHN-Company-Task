@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
 @IBOutlet weak var sliderCollectionView:UICollectionView!
 @IBOutlet weak var collGrid:UICollectionView!
 @IBOutlet weak var collUser:UICollectionView!
-@IBOutlet weak var pageControl:UIPageControl!
+@IBOutlet weak var pageView:UIPageControl!
 @IBOutlet weak var constraintGridHeight:NSLayoutConstraint!
     
 var userNameToFetch = String()
@@ -22,76 +22,62 @@ var userNameToFetch = String()
 var arrayImgSlider = [Jwellery]()
 var arrayUser = [DataUser]()
     
-var timer:Timer?
+var timer = Timer()
 var counter = 0
     
 var arrGridImage = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         lblUserName.text = userNameToFetch
-        
         arrGridImage = ["tv.jpeg","camera.jpeg","camera1.jpeg","monitor.jpeg"]
+        fetchSliderImages()
         setUpCollectionView()
         fetchUsers()
-        fetchSliderImages()
-        
-       
     }
   
-    @objc func slideToNext()
+    @objc func slideImages()
     {
-        if counter<arrayImgSlider.count-1
+        if counter<arrayImgSlider.count
         {
-           
-           counter = counter+1
-            sliderCollectionView.scrollToItem(at: IndexPath(item: counter, section: 0), at: .right, animated: true)
+            sliderCollectionView.scrollToItem(at: IndexPath(item:counter , section: 0), at: .right, animated: true)
+            pageView.currentPage = counter
+            counter = counter+1
+            print(counter)
+            print(pageView.currentPage)
         }
         else
         {
           counter = 0
-          sliderCollectionView.scrollToItem(at: IndexPath(item: counter, section: 0), at: .right, animated: true)
-
+            sliderCollectionView.scrollToItem(at: IndexPath(item:counter , section: 0), at: .right, animated: false)
+          pageView.currentPage = counter
         }
-        pageControl.currentPage = counter
     }
     
     func fetchSliderImages()
     {
        let urlString = "https://fakestoreapi.com/products/category/jewelery"
        let url = URL(string: urlString)
-        
-        let task = URLSession.shared.dataTask(with: url!, completionHandler: {(data, response, error)in
-           
-            guard let data = data , error == nil else
+       URLSession.shared.dataTask(with: url!) { data, response, error in
+              print(data)
+            
+            let result = try! JSONDecoder().decode([Jwellery].self, from: data!)
+            print(result)
+            for eachResult in result
             {
-                print("Error occur while fetching data")
-                return
+                self.arrayImgSlider.append(eachResult)
             }
-            do
-            {
-                self.arrayImgSlider = try JSONDecoder().decode([Jwellery].self,from: data)
-                print(self.arrayImgSlider.count)
-            }
-            catch
-            {
-              print("error while decoding json \(error)")
-            }
+            print(self.arrayImgSlider.count)
             DispatchQueue.main.async
             {
-              print(self.arrayImgSlider.count)
-              self.sliderCollectionView.reloadData()
-             self.pageControl.numberOfPages = self.arrayImgSlider.count
-                
-              self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.slideToNext), userInfo: nil, repeats: true)
-
-            }
-        })
-        task.resume()
+                self.pageView.numberOfPages = self.arrayImgSlider.count
+                self.pageView.currentPage = 0
+                self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self.slideImages), userInfo: nil, repeats: true)
+                self.sliderCollectionView.reloadData()
+          }
+    }.resume()
   }
   
-    
     func fetchUsers()
     {
         let urlString = "https://reqres.in/api/users?page=2"
@@ -106,7 +92,8 @@ var arrGridImage = [String]()
                 self.arrayUser.append(eachUser)
             }
             print(self.arrayUser.count)
-            DispatchQueue.main.async {
+            DispatchQueue.main.async
+            {
                 self.collUser.reloadData()
             }
     }
@@ -161,10 +148,15 @@ extension HomeViewController:UICollectionViewDataSource
         {
             let cell =  sliderCollectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
               
-            let imageResize = SDImageResizingTransformer(size: CGSize(width: sliderCollectionView.frame.width, height: sliderCollectionView.frame.height), scaleMode:.aspectFit)
+            let imageResize = SDImageResizingTransformer(size: CGSize(width: 360 , height: sliderCollectionView.frame.height), scaleMode:.aspectFit)
+            
+            print(sliderCollectionView.frame.width)
+            print(sliderCollectionView.frame.height)
+            
+            print(cell.imgSlider.frame.width)
             
             cell.imgSlider.sd_setImage(with: NSURL(string: arrayImgSlider[indexPath.row].image)as URL?,  placeholderImage: nil, context: [.imageTransformer: imageResize])
-            
+        
               return cell
 
         }
@@ -214,7 +206,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout
         }
         else
         {
-            return CGSize(width: sliderCollectionView.frame.width, height: sliderCollectionView.frame.height)
+            return CGSize(width: 360, height: sliderCollectionView.frame.height)
         }
         
     }

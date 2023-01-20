@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var btnSubmit: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
